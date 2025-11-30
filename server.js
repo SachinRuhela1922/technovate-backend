@@ -106,6 +106,10 @@ app.post("/api/user/input", authMiddleware, async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 });
+app.get("/api/auth/test", (req, res) => {
+  res.json({ message: "API is working 🚀" });
+});
+
 
 // ----------------------
 // Start server
